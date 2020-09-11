@@ -19,3 +19,16 @@ Or maybe another server on your network:
 ```
 docker run -d -p 80:80 -e TARGET_SERVER=192.168.8.15:8080 lvanwissen/nginx-proxy-pass
 ```
+
+## Environment variables
+
+### Required
+
+* TARGET_SERVER
+
+### Optional
+
+* HOST_SERVER (default = $host)
+* CONNECT_TIMEOUT (default = 150)
+* SEND_TIMEOUT (default = 100)
+* READ_TIMEOUT (default = 150)
